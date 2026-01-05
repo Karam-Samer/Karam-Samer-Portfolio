@@ -3,8 +3,8 @@
 A modern, high-performance personal portfolio website built with **HTML, CSS, and Vanilla JavaScript**.  
 Designed to showcase real-world front-end skills, clean architecture, and professional UI/UX practices.
 
-🌐 **Live Demo:** (Add your deployed link here)  
-📄 **Resume:** (Add CV link if hosted)
+🌐 **Live Demo:** [https://karam-samer.github.io/Karam-Samer-Portfolio/](https://karam-samer.github.io/Karam-Samer-Portfolio/)  
+📄 **Resume:** [View CV](assets/Karam-Samer-CV.pdf)
 
 ---
 
@@ -15,7 +15,6 @@ This portfolio was built to represent my skills as a **Strong Junior Front-End D
 - Clean & semantic HTML
 - Scalable CSS architecture
 - Performance optimization (Lighthouse 90+)
-- Dynamic content loading from GitHub API
 - Responsive, accessible UI
 
 The project follows **real-world front-end standards**, not just academic examples.
@@ -26,35 +25,28 @@ The project follows **real-world front-end standards**, not just academic exampl
 
 - **HTML5** – Semantic & accessible markup
 - **CSS3** – Modern layout (Flexbox & Grid), glassmorphism UI
-- **JavaScript (ES6+)** – DOM manipulation, async/await, APIs
+- **JavaScript (ES6+)** – DOM manipulation, async/await
 - **Font Awesome** – Icons
-- **GitHub API** – Dynamic project loading
 
 ---
 
 ## ✨ Key Features
 
-### 🔹 Dynamic Projects Section
-- Automatically fetches repositories from GitHub
-- Displays:
-  - Project name
-  - Description
-  - Main language
-  - GitHub stars
-  - Last update date
-- Featured project layout + supporting cards
-- Skeleton loading & error handling
+### 🔹 Projects Section
+- Detailed project cards with custom layouts
+- Featured "Educational Platform" project with specific clarifications
+- "BookStore System" with UML analysis and demo integration
+- "Student Grade Analysis" Python tool showcase
 
 ### 🔹 Skills Tree
 - Visual skill tree on desktop
 - Accordion layout on mobile
 - Icons for each skill
-- Clean & readable hierarchy (no fake skill levels)
+- Clean & readable hierarchy
 
 ### 🔹 Performance & Optimization
 - Lighthouse score **90+**
-- Lazy-loaded images
-- Optimized assets
+- Optimized WebP images
 - Minimal JS & CSS footprint
 
 ### 🔹 UX / UI Enhancements
@@ -77,9 +69,8 @@ The project follows **real-world front-end standards**, not just academic exampl
 Karam_Portfolio/
 │
 ├── assets/                  # Static assets
-│   ├── images/             # Profile & project images
-│   │   └── profile-placeholder.webp
-│   ├── fonts/              # Local fonts (if optional)
+│   ├── images/             # Profile & project images (WebP optimized)
+│   ├── fonts/              # Local fonts
 │   └── Karam-Samer-CV.pdf  # Resume file
 │
 ├── css/                    # Modular CSS styles
@@ -88,8 +79,7 @@ Karam_Portfolio/
 │
 ├── js/                     # Modular JavaScript
 │   ├── main.js             # Core logic (nav, modals)
-│   ├── animations.js       # Scroll observers & animations
-│   └── github-projects.js  # GitHub API fetch logic
+│   └── animations.js       # Scroll observers & animations
 │
 ├── index.html              # Main HTML entry point
 └── README.md               # Project documentation
