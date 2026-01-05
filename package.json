@@ -1,0 +1,21 @@
+{
+  "name": "karam-samer-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, high-performance personal portfolio website built with **HTML, CSS, and Vanilla JavaScript**.   Designed to showcase real-world front-end skills, clean architecture, and professional UI/UX practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -p 8080 -s",
+    "lighthouse": "lhci autorun",
+    "lighthouse:desktop": "lighthouse http://localhost:8080/index.html --preset=desktop --view",
+    "lighthouse:mobile": "lighthouse http://localhost:8080/index.html --view"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "http-server": "^14.1.1",
+    "lighthouse": "^12.8.2"
+  }
+}

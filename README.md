@@ -45,7 +45,7 @@ The project follows **real-world front-end standards**, not just academic exampl
 - Clean & readable hierarchy
 
 ### 🔹 Performance & Optimization
-- Lighthouse score **90+**
+- Lighthouse score **90+** ([View Performance Report](PERFORMANCE.md))
 - Optimized WebP images
 - Minimal JS & CSS footprint
 
