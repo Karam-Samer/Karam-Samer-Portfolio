@@ -74,44 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Theme Toggle Logic ---
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
-    const body = document.body;
 
-    // Check Local Storage or System Preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-
-    if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
-        body.classList.add('light-theme');
-        if (themeIcon) {
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        }
-    }
-
-    // Toggle Event Listener
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('light-theme');
-            const isLight = body.classList.contains('light-theme');
-
-            // Update Icon
-            if (themeIcon) {
-                if (isLight) {
-                    themeIcon.classList.remove('fa-sun');
-                    themeIcon.classList.add('fa-moon');
-                } else {
-                    themeIcon.classList.remove('fa-moon');
-                    themeIcon.classList.add('fa-sun');
-                }
-            }
-
-            // Save Preference
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        });
-    }
 
 });
 
