@@ -11,3 +11,8 @@ Thumbs.db
 # Editor Directories
 .vscode/
 .idea/
+
+# Lighthouse Reports
+.lighthouseci/
+*.lighthouse.*.html
+*.lighthouse.*.json
