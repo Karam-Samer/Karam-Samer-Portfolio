@@ -82,5 +82,7 @@ Karam_Portfolio/
 │   └── animations.js       # Scroll observers & animations
 │
 ├── index.html              # Main HTML entry point
+├── favicon.ico             # Website favicon
+├── site.webmanifest        # PWA manifest
 └── README.md               # Project documentation
 ```
