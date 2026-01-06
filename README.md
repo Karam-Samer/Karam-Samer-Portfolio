@@ -82,6 +82,8 @@ Karam_Portfolio/
 │   └── animations.js       # Scroll observers & animations
 │
 ├── index.html              # Main HTML entry point
+├── android-chrome-192x192.png # Android home screen icon
+├── android-chrome-512x512.png # Android splash screen icon
 ├── favicon.ico             # Website favicon
 ├── site.webmanifest        # PWA manifest
 └── README.md               # Project documentation
