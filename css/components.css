@@ -92,12 +92,16 @@
 }
 
 .tree-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
     width: 100%;
     position: relative;
-    justify-items: center;
+}
+.tree-grid > .tree-branch {
+    flex: 1;
+    min-width: 0;
 }
 
 /* Connectors */
@@ -410,9 +414,14 @@
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+.projects-grid > * {
+    flex: 1 1 300px;
+    max-width: 100%;
 }
 
 .project-card {
@@ -486,9 +495,15 @@
 .edu-grid,
 .certs-grid,
 .services-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+.edu-grid > *,
+.certs-grid > *,
+.services-row > * {
+    flex: 1 1 300px;
 }
 
 .edu-card {
@@ -604,10 +619,15 @@
 }
 
 .repos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     margin-bottom: 40px;
+}
+
+.repos-grid > * {
+    flex: 1 1 300px;
+    max-width: 100%;
 }
 
 .repo-card {
@@ -690,20 +710,24 @@
 
 /* Skeleton */
 .github-loading {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
+.github-loading > .skeleton-card {
+    flex: 1 1 calc(33.333% - 17px);
+}
+
 @media (max-width: 900px) {
-    .github-loading {
-        grid-template-columns: repeat(2, 1fr);
+    .github-loading > .skeleton-card {
+        flex: 1 1 calc(50% - 13px);
     }
 }
 
 @media (max-width: 600px) {
-    .github-loading {
-        grid-template-columns: 1fr;
+    .github-loading > .skeleton-card {
+        flex: 1 1 100%;
     }
 }
 
@@ -834,8 +858,17 @@
     .services-row,
     .projects-grid,
     .repos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        flex-direction: column;
+    }
+
+    .edu-grid > *,
+    .certs-grid > *,
+    .services-row > *,
+    .projects-grid > *,
+    .repos-grid > * {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
     }
 
     /* Reduce Padding in Cards */
